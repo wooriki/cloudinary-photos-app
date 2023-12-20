@@ -22,12 +22,10 @@ export default function Home() {
       />
       {imageId && (
         <CldImage
-          width="400"
+          width="500"
           height="300"
           src={imageId}
           sizes="100vw"
-          blurFaces
-          // tint="70:blue:green:purple"
           alt="Description of my image"
         />
       )}
