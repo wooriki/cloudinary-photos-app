@@ -15,7 +15,7 @@ export default function UploadBtn() {
         onUpload={(result: UploadResult) => {
           // setImgId(uploadResult.info.public_id);
           setTimeout(() => {
-            console.log("refresh");
+            // console.log("refresh");
             router.refresh();
           }, 1000);
         }}

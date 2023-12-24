@@ -10,7 +10,7 @@ export type UploadResult = {
   event: "success";
 };
 export default function Home() {
-  const [imageId, setImgId] = useState("pyk2tqljbyp2yqaqzqqe");
+  const [imgId, setImgId] = useState("pyk2tqljbyp2yqaqzqqe");
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <CldUploadButton
@@ -20,11 +20,11 @@ export default function Home() {
         }}
         uploadPreset="typkyma5"
       />
-      {imageId && (
+      {imgId && (
         <CldImage
           width="500"
           height="300"
-          src={imageId}
+          src={imgId}
           sizes="100vw"
           alt="Description of my image"
         />
